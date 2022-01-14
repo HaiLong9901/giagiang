@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root1" style="-fx-background-radius: 50;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.signIn">
+   <children>
+      <AnchorPane fx:id="alert" prefHeight="550.0" prefWidth="700.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="550.0" stroke="TRANSPARENT" strokeType="INSIDE" width="703.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" height="550.0" layoutX="-30.0" stroke="#1f93ff00" strokeType="INSIDE" style="-fx-border-radius: 5;" width="249.0">
+               <fill>
+                  <LinearGradient endX="0.4805825242718446" endY="1.0" startX="0.5873786407766991" startY="0.20873786407766987">
+                     <stops>
+                        <Stop color="#4b006b" />
+                        <Stop color="#9a047a" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow height="0.0" radius="15.05" width="62.2" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="InsRec" arcHeight="30.0" arcWidth="30.0" fill="#b50088" height="30.0" layoutX="166.0" layoutY="501.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="30.0" />
+            <Text fx:id="InsText" fill="WHITE" layoutX="205.0" layoutY="522.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="InsImg" fitHeight="30.0" fitWidth="30.0" layoutX="160.0" layoutY="501.0" onMouseEntered="#Instagram" onMouseExited="#Instagram" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@instargram.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="GgRec" arcHeight="30.0" arcWidth="30.0" fill="#b50088" height="30.0" layoutX="87.0" layoutY="501.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="30.0" />
+            <Text fx:id="GgText" fill="WHITE" layoutX="129.0" layoutY="522.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="GgImg" fitHeight="30.0" fitWidth="30.0" layoutX="87.0" layoutY="501.0" onMouseEntered="#Google" onMouseExited="#Google" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@google.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="FbRec" arcHeight="30.0" arcWidth="30.0" fill="#b50088" height="30.0" layoutX="17.0" layoutY="501.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="30.0" />
+            <Text fx:id="FbText" fill="WHITE" layoutX="50.0" layoutY="521.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="FbImg" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="501.0" onMouseEntered="#FaceBook" onMouseExited="#FaceBook" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logoFb.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="295.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@id2.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="idTextField" layoutX="341.0" layoutY="246.0" prefHeight="40.0" prefWidth="276.0" promptText="yourID" style="-fx-background-radius: 50;">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font></TextField>
+            <ImageView fx:id="CloseBt" fitHeight="20.0" fitWidth="20.0" layoutX="676.0" layoutY="7.0" onMouseClicked="#Close" onMouseEntered="#Close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cancel1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="167.0" fitWidth="167.0" layoutX="20.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logo1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="373.0" layoutX="286.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@welcome.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" height="54.0" layoutX="48.0" layoutY="213.0" stroke="TRANSPARENT" strokeType="INSIDE" width="108.0">
+               <fill>
+                  <RadialGradient centerX="0.5397727272727273" centerY="0.47572815533980584" radius="1.0">
+                     <stops>
+                        <Stop color="#7a008af2" />
+                        <Stop color="#00eeff" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <effect>
+                  <DropShadow color="#393838" height="20.22" offsetX="0.5" offsetY="0.5" radius="14.6625" width="40.43" />
+               </effect>
+            </Rectangle>
+            <PasswordField fx:id="passwordField" layoutX="341.0" layoutY="332.0" prefHeight="42.0" prefWidth="276.0" style="-fx-background-radius: 50;" />
+            <Rectangle fx:id="signinRec2" arcHeight="50.0" arcWidth="50.0" fill="#5e5e5e" height="54.0" layoutX="402.0" layoutY="431.0" onMouseClicked="#signin" onMouseEntered="#signin" onMouseExited="#signin" stroke="TRANSPARENT" strokeType="INSIDE" width="167.0" />
+            <Rectangle fx:id="signinRec1" arcHeight="50.0" arcWidth="50.0" height="54.0" layoutX="396.0" layoutY="426.0" onMouseClicked="#signin" onMouseEntered="#signin" onMouseExited="#signin" stroke="TRANSPARENT" strokeType="INSIDE" width="167.0">
+               <fill>
+                  <LinearGradient endX="0.4805825242718446" endY="1.0" startX="0.5873786407766991" startY="0.20873786407766987">
+                     <stops>
+                        <Stop color="#7a008af2" />
+                        <Stop color="#9a047a" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text fx:id="signinText" fill="WHITE" layoutX="443.0" layoutY="462.0" onMouseClicked="#signin" onMouseEntered="#signin" onMouseExited="#signin" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@web2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="13.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@phone1.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="41.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="https://hailonget1.com">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="45.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0352566452">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="295.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pass3.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" height="54.0" layoutX="50.0" layoutY="299.0" stroke="TRANSPARENT" strokeType="INSIDE" width="108.0">
+               <effect>
+                  <DropShadow color="#393838" height="20.22" offsetX="0.5" offsetY="0.5" radius="14.6625" width="40.43" />
+               </effect>
+               <fill>
+                  <RadialGradient centerX="0.5397727272727273" centerY="0.47572815533980584" radius="1.0">
+                     <stops>
+                        <Stop color="#7a008af2" />
+                        <Stop color="#00eeff" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Rectangle>
+            <Text fx:id="cusText" fill="WHITE" layoutX="70.0" layoutY="246.0" onMouseClicked="#Customer" onMouseEntered="#Customer" onMouseExited="#Customer" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="74.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QR code">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00d8ff" layoutX="436.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in with FaceChecking" underline="true">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="cusRec" arcHeight="50.0" arcWidth="50.0" fill="#03fffff2" height="54.0" layoutX="48.0" layoutY="213.0" onMouseClicked="#Customer" onMouseEntered="#Customer" onMouseExited="#Customer" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="108.0">
+               <effect>
+                  <DropShadow color="#27d4ff" height="30.33" offsetX="0.5" offsetY="0.5" radius="17.189999999999998" width="40.43" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="qrRec" arcHeight="50.0" arcWidth="50.0" fill="#03fffff2" height="54.0" layoutX="50.0" layoutY="299.0" onMouseClicked="#qrCode" onMouseEntered="#qrCode" onMouseExited="#qrCode" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="108.0">
+               <effect>
+                  <DropShadow color="#27d4ff" height="30.33" offsetX="0.5" offsetY="0.5" radius="17.189999999999998" width="40.43" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="260.0" layoutY="495.0" prefHeight="21.0" prefWidth="433.0" style="-fx-alignment: center;" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
